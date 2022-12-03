@@ -9,16 +9,24 @@
   <body>
     
     <form class="search-form" id="search-form">
-      <input
+      <input class="search-form__input"
       type="text"
       name="searchQuery"
       autocomplete="off"
       placeholder="Search images..."
       />
-      <button type="submit">Search</button>
+      <button class="search-form__button" type="submit">Search</button>
     </form>
     
-    <include src="./partials/example.html"></include>
-    <script type="module" src="./index.js"></script>
+    <div class="gallery">
+      <!-- Картки зображень -->
+    </div>
+
+    <button type="button" class="load-more is-hidden">Load more</button>
+    <p class="text-Collections is-hidden">
+      We're sorry, but you've reached the end of search results.
+    </p>
+
+    <script src="./index.js" type="module"></script>
     </body>
 </html>
